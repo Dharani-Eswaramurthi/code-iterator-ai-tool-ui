@@ -78,6 +78,29 @@
   box-shadow: 0 4px 16px 0 rgba(37,99,235,0.08);
 }
 
+.suggestion-highlight {
+  background: rgba(154, 230, 180, 0.15) !important;
+  border-left: 3px solid #48bb78 !important;
+}
+
+.suggestion-highlight:hover {
+  background: rgba(154, 230, 180, 0.25) !important;
+}
+
+.monaco-editor {
+  background: rgba(154, 230, 180, 0.25) !important;
+}
+
+.font-editor {
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', monospace;
+}
+
+.editor-container {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
 .modern-btn {
   align-self: flex-end;
   background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
