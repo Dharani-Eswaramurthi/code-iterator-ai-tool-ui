@@ -1,28 +1,39 @@
-# Getting Started with Create React App
+# AiCade Code Iterator UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **AiCade Code Iterator** – your smart playground for rapid code iteration and AI-powered improvements.
 
-## Available Scripts
+## 🚀 What is this?
 
-In the project directory, you can run:
+A modern web UI that lets you:
+- Paste or write code in your favorite language
+- Describe what you want to change
+- Instantly get AI-generated code improvements and explanations
+- Accept or reject suggestions with a single click
 
-### `npm start`
+## ✨ Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Multi-language Monaco Editor:** Write in C++, Python, JS, Java, and more.
+- **AI Suggestions:** Get context-aware code improvements and clear explanations.
+- **One-click Integration:** Accept or reject suggestions seamlessly.
+- **Sleek UI:** Built with Chakra UI for a clean, intuitive experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ How to Use
 
-### `npm test`
+1. **Select Language:** Choose your coding language from the dropdown.
+2. **Paste/Write Code:** Enter your code in the editor.
+3. **Describe Changes:** Tell the AI what you want to improve or modify.
+4. **Get Suggestions:** Click "Suggest Improvements" and review the AI's response.
+5. **Integrate or Reject:** Accept to update your code, or reject to keep your original.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚡ Quick Start
 
-### `npm run build`
+```bash
+npm install
+npm start
+```
+> Make sure your backend API is running at `http://localhost:8000/suggest`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧩 Tech Stack
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
