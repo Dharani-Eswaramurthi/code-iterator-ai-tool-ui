@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+.font-editor {
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+  transition: font-family 0.3s, font-size 0.3s;
+}
+
+.editor-original-highlight {
+  background: #f3f4f6 !important;
+  transition: background 0.3s;
+}
+
+.editor-suggestion-highlight {
+  background: #d1fae5 !important;
+  transition: background 0.3s;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +52,134 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.modern-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modern-textarea {
+  resize: vertical;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+  background: #f9fafb;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.modern-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 4px 16px 0 rgba(37,99,235,0.08);
+}
+
+.modern-btn {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2.5rem;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  position: relative;
+  min-width: 180px;
+}
+.modern-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.modern-btn:not(:disabled):hover {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 24px 0 rgba(37,99,235,0.12);
+}
+
+.spinner {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid #fff;
+  border-top: 3px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.editor-tooltip {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  z-index: 20;
+  background: #fff;
+  color: #1e293b;
+  border: 1.5px solid #2563eb;
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+  box-shadow: 0 4px 24px 0 rgba(37,99,235,0.10);
+  min-width: 260px;
+  max-width: 340px;
+  pointer-events: none;
+  opacity: 0.97;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.editor-action-overlay {
+  position: absolute;
+  bottom: 18px;
+  right: 24px;
+  z-index: 30;
+  display: flex;
+  gap: 1rem;
+}
+
+.accept-btn, .reject-btn {
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.7rem 1.8rem;
+  box-shadow: 0 2px 8px 0 rgba(16,185,129,0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.accept-btn {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  color: #fff;
+}
+.accept-btn:hover {
+  background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 24px 0 rgba(16,185,129,0.12);
+}
+.reject-btn {
+  background: linear-gradient(90deg, #ef4444 0%, #b91c1c 100%);
+  color: #fff;
+}
+.reject-btn:hover {
+  background: linear-gradient(90deg, #b91c1c 0%, #ef4444 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 24px 0 rgba(239,68,68,0.12);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
 }
