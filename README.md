@@ -43,7 +43,70 @@ npm start
 - Monaco Editor
 - Axios
 
+## 🧪 Sample Code & Prompt
+
+You can use the following game-related sample code and prompt to test the platform:
+
+### Example 1: Python (Guess the Number Game)
+
+**Sample Code:**
+```python
+import random
+
+number = random.randint(1, 10)
+guess = int(input("Guess a number between 1 and 10: "))
+if guess == number:
+    print("You win!")
+else:
+    print("Try again!")
+```
+
+**Prompt:**
+```
+Add a loop so the user can keep guessing until they get the correct number. Show the number of attempts at the end.
+```
+
 ---
+
+### Example 2: C++ (Simple Score Counter)
+
+**Sample Code:**
+```cpp
+#include <iostream>
+int main() {
+    int score = 0;
+    std::cout << "Score: " << score << std::endl;
+    // TODO: Add points for collecting a coin
+    return 0;
+}
+```
+
+**Prompt:**
+```
+Add code to ask the user how many coins they collected and update the score by adding 10 points per coin.
+```
+
+---
+
+### Example 3: JavaScript (Basic Click Game)
+
+**Sample Code:**
+```javascript
+let score = 0;
+function clickButton() {
+  score++;
+  document.getElementById('score').innerText = score;
+}
+```
+
+**Prompt:**
+```
+Add a reset button that sets the score back to zero when clicked.
+```
+
+---
+
+Try selecting a function or block, enter the prompt, and click "Get Improvement Suggestions" to see the AI-powered enhancement!
 
 **AiCade: Iterate smarter. Code better.**
 
