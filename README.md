@@ -13,17 +13,20 @@ This UI empowers developers to:
 ## ✨ Features
 
 - **Multi-language Monaco Editor:** Supports C++, Python, JavaScript, Java, and more.
-- **AI Suggestions:** Context-aware code improvements and explanations.
-- **Effortless Integration:** Accept or reject suggestions instantly.
+- **Selection-based Suggestions:** Select a region of code, describe your desired change, and get targeted improvements.
+- **Temporary Suggestion Preview:** Suggestions are shown as temporary blocks in the editor, clearly marked and highlighted, until you accept or reject them.
+- **Effortless Integration:** Accept to replace the selected code, or reject to discard the suggestion.
 - **Modern UI:** Built with Chakra UI for a clean, intuitive workflow.
 
 ## 🛠️ How It Works
 
 1. **Pick a Language:** Select your preferred language.
 2. **Paste or Write Code:** Use the Monaco editor.
-3. **Describe Your Change:** Enter your prompt.
-4. **Get Smart Suggestions:** Click "Suggest Improvements".
-5. **Integrate or Reject:** One-click to accept or discard.
+3. **Select Code:** Highlight the code you want to improve.
+4. **Describe Your Change:** Enter your prompt.
+5. **Get Smart Suggestions:** Click "Get Improvement Suggestions".
+6. **Preview & Decide:** The suggestion appears as a highlighted block below your selection.
+7. **Integrate or Reject:** Accept to apply the improvement, or discard to remove the suggestion.
 
 ## ⚡ Quick Start
 
